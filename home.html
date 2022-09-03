@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>Home</title>
-</head>
-<body>
-    <h4>HOME</h4>
-    <p>Escolha uma categoria para visualizar</p>
-    <button>Todos</button>
-
-    <section>
-        <p>Resultado da busca:</p>
-        <img src="">
-
-    </section>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h4>HOME</h4>
+        <p>Escolha uma categoria para visualizar</p>
+      </div>
+      <select name="categories" id="animals">
+        <option value="selecione" disabled selected>Selecione</option>
+        <option value="todos">Todos</option>
+      </select>
+      <p hidden>Resultados da Busca:</p>
+      <section></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>

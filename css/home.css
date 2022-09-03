@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  margin: 4% 4% 1%;
+}
+
+section {
+  margin: 2%;
+  color: rgb(71, 70, 70);
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  background-color: plum;
+}
+
+select {
+  margin: 2% 4%;
+  background-color: rgb(247, 219, 36);
+  width: 120px;
+  height: 25px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+select:focus {
+  outline: 0;
+}
+
+.item {
+  height: 40%;
+  width: 70%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+}
+
+.item img {
+  height: 100%;
+  width: 50%;
+  border-radius: 15px 0 0 15px;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+}
