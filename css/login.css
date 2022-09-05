@@ -7,7 +7,7 @@
 .login-conteiner {
   /* padding-left: 2%;
   margin-top: 2%; */
-  height: 100px;
+  height: 120px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -18,13 +18,14 @@
   height: 40px;
   width: 40px;
 }
-h4 {
+.login-conteiner h4 {
   margin-top: 1%;
   color: rgb(71, 70, 70);
 }
 
-p {
+.login-conteiner p {
   color: rgb(71, 70, 70);
+  margin-bottom: 4%;
 }
 
 form {
@@ -40,7 +41,6 @@ form {
   text-align: left;
   font-size: 12px;
   width: 60%;
-
 }
 
 .senha {
@@ -63,19 +63,22 @@ form {
 }
 
 label {
-  color: rgb(214, 101, 173);
+  color: rgb(189, 53, 204);
+  margin: 4%;
 }
 
 a {
-  background-color: rgb(214, 101, 173);
+  background-color: rgb(189, 53, 204);
   text-decoration: none;
-  width: 30%;
+  width: 50%;
+  height: 25px;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
   color: white;
   text-align: center;
-  margin-top: 3% ;
+  margin-top: 6%;
+  font-size: large;
 }
 section {
   display: flex;

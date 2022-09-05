@@ -7,7 +7,7 @@ const fetchAnimals = async () => {
   const request = await fetch(urlAnimals);
   const response = await request.json();
   return response;
-}
+};
 const section = document.querySelector("section");
 const createCards = async (url, name, age) => {
   const div = document.createElement("div");
@@ -21,16 +21,16 @@ const createCards = async (url, name, age) => {
   h3.innerText = name;
   span.innerText = age;
   div.appendChild(img);
-    div2.appendChild(h3);
-    div2.appendChild(span);
-    div.appendChild(div2);
-    section.appendChild(div);
-}
- const displayAnimals = async (results) => {
-  results.map(({img, name, age}) => {
+  div2.appendChild(h3);
+  div2.appendChild(span);
+  div.appendChild(div2);
+  section.appendChild(div);
+};
+const displayAnimals = async (results) => {
+  results.map(({ img, name, age }) => {
     createCards(img, name, age);
-  })
- }
+  });
+};
 
 const fetchAPI = async () => {
   const request = await fetch(urlCategories);
@@ -45,28 +45,22 @@ const fetchAPI = async () => {
 
 fetchAPI();
 
-select.addEventListener("change", async ({target}) => {
+select.addEventListener("change", async ({ target }) => {
   const results = await fetchAnimals();
- if(target.value === "todos"){
-  section.innerHTML = "";
-  return displayAnimals(results);
- } else if(target.value === "American Curl"){
-  section.innerHTML = "";
-  return displayAnimals(results.slice(0,3));
- } else if(target.value === "Siberian"){
-  section.innerHTML = "";
-  return displayAnimals(results.slice(3,6));
- } else if(target.value === "Tonkinese"){
-  section.innerHTML = "";
-  return displayAnimals(results.slice(6,9));
- } else if(target.value === "Pixiebob"){
-  section.innerHTML = "";
-  return displayAnimals(results.slice(9,12));
- }
-})
-
-
-// 1 pegar a opção selecionada
-// 2 atraves da opção selecionada faz uma
-// função getCategories para pegar a categoria selecionada
-// 3 resultado dessa função será atribuída a um elemento html
+  if (target.value === "todos") {
+    section.innerHTML = "";
+    return displayAnimals(results);
+  } else if (target.value === "American Curl") {
+    section.innerHTML = "";
+    return displayAnimals(results.slice(0, 3));
+  } else if (target.value === "Siberian") {
+    section.innerHTML = "";
+    return displayAnimals(results.slice(3, 6));
+  } else if (target.value === "Tonkinese") {
+    section.innerHTML = "";
+    return displayAnimals(results.slice(6, 9));
+  } else if (target.value === "Pixiebob") {
+    section.innerHTML = "";
+    return displayAnimals(results.slice(9, 12));
+  }
+});
