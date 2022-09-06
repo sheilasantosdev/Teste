@@ -100,3 +100,6 @@ Tela Home apresentando os resultados de busca:
 
 <div align="center"> 
   <img src="https://user-images.githubusercontent.com/108371535/188523287-ddd6a2f1-1329-4b6f-bf16-38276ffe5c93.jpg" width="200px" heigth="200px"></div>
+
+
+
